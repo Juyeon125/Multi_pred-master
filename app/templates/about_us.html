@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}About US{% endblock %}
+{% block mainTitle %}About US{% endblock %}
+{% block mainContent %}
+    <section id="about_us" class="four">
+        <div class="container">
+            <div class="card mt-3">
+                <div class="card-header">
+                    STEP 1 - Enter your input sequences
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label" for="sequence-text">sequences in any supported format:</label>
+                        <textarea id="sequence-text" class="form-control" rows="6" maxlength="4000"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Or, upload a file:</label>
+                        <input type="file" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
